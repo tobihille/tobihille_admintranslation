@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+
+  <modules>
+    <Tobihille_AdminTranslation>
+      <version>0.1.0</version>
+    </Tobihille_AdminTranslation>
+  </modules>
+
+  <global>
+
+    <blocks>
+      <tobihille_admintranslation>
+        <class>Tobihille_AdminTranslation_Block</class>
+      </tobihille_admintranslation>
+    </blocks>
+
+    <models>
+      <tobihille_admintranslation>
+        <class>Tobihille_AdminTranslation_Model</class>
+        <resourceModel>tobihille_admintranslation_resource</resourceModel>
+      </tobihille_admintranslation>
+
+      <tobihille_admintranslation_resource>
+        <class>Tobihille_AdminTranslation_Model_Resource</class>
+
+        <entities>
+          <tobihille_admintranslation>
+            <table>tobihille_admintranslation</table>
+          </tobihille_admintranslation>
+        </entities>
+
+      </tobihille_admintranslation_resource>
+    </models>
+
+    <helpers>
+      <tobihille_admintranslation>
+        <class>Tobihille_AdminTranslation_Helper</class>
+      </tobihille_admintranslation>
+      <admtrans>
+        <class>Tobihille_AdminTranslation_Helper</class>
+      </admtrans>
+    </helpers>
+
+    <resources>
+      <tobihille_admintranslation_setup>
+        <setup>
+          <module>Tobihille_AdminTranslation</module>
+        </setup>
+      </tobihille_admintranslation_setup>
+    </resources>
+
+  </global>
+
+  <admin>
+    <routers>
+      <maintain>
+        <use>admin</use>
+        <args>
+          <frontName>admintranslation</frontName>
+          <module>Tobihille_AdminTranslation_Adminhtml</module>
+        </args>
+      </maintain>
+    </routers>
+  </admin>
+
+  <default>
+    <web>
+      <general>
+        <custom_translation_fallback>1</custom_translation_fallback>
+      </general>
+    </web>
+  </default>
+</config>
