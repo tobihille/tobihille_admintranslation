@@ -8,4 +8,4 @@
 
 # Use
 
-* replace "__(" with "___("
+* replace "\_\_(" with "\_\_\_("
