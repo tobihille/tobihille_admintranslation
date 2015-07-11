@@ -52,7 +52,10 @@ class Tobihille_AdminTranslation_Block_Admintranslation_Edit extends Mage_Adminh
     $modelTitle = $this->_getModelTitle();
     if ( $model && $model->getId() )
     {
-      return $this->_getHelper()->___("Edit translation (ID: %s)", $model->getId() );
+      return $this->_getHelper()->___(
+          "Edit translation (ID: %s)",
+          Mage::app()->getStore()->getId(),
+          $model->getId() );
     }
     else
     {
