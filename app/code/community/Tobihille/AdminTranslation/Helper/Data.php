@@ -40,9 +40,9 @@ class Tobihille_AdminTranslation_Helper_Data extends Mage_Core_Helper_Abstract {
       //get calling class and extract modulename from it
       $bTrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 1);
       $moduleName = $bTrace[0]['class'];
-      $moduleName = explode('_', $moduleName);
+      $moduleName = substr($moduleName, 0, strpos($moduleName, '_Helper'));
 
-      $this->_moduleName = $moduleName[0].'_'.$moduleName[1];
+      $this->_moduleName = $moduleName;
       return call_user_func_array(array($this, "__"), $args);
     }
   }

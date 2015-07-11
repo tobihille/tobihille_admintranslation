@@ -1,2 +1,3 @@
 app/code/community/Tobihille/AdminTranslation
 app/etc/modules/Tobihille_AdminTranslation.xml
+app/locale/de_DE/Tobihille_AdminTranslation.csv

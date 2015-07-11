@@ -18,15 +18,10 @@ class Tobihille_AdminTranslation_Block_Admintranslation_Edit_Form extends Mage_A
       return Mage::helper('tobihille_admintranslation');
   }
 
-  protected function _getModelTitle()
-  {
-      return 'Maintain translation';
-  }
-
   protected function _prepareForm()
   {
     $model  = $this->_getModel();
-    $modelTitle = $this->_getModelTitle();
+
     $form   = new Varien_Data_Form(
       array(
         'id'        => 'edit_form',
@@ -37,7 +32,7 @@ class Tobihille_AdminTranslation_Block_Admintranslation_Edit_Form extends Mage_A
 
     $fieldset   = $form->addFieldset('base_fieldset',
       array(
-        'legend'    => $this->_getHelper()->___("$modelTitle Information"),
+        'legend'    => $this->_getHelper()->___("Edit"),
         'class'     => 'fieldset-wide',
       )
     );

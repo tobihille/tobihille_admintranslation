@@ -71,4 +71,29 @@
       </general>
     </web>
   </default>
+
+  <frontend>
+    <translate>
+      <modules>
+        <Tobihille_AdminTranslation>
+          <files>
+            <default>Tobihille_AdminTranslation.csv</default>
+          </files>
+        </Tobihille_AdminTranslation>
+      </modules>
+    </translate>
+  </frontend>
+
+  <adminhtml>
+    <translate>
+      <modules>
+        <Tobihille_AdminTranslation>
+          <files>
+            <default>Tobihille_AdminTranslation.csv</default>
+          </files>
+        </Tobihille_AdminTranslation>
+      </modules>
+    </translate>
+  </adminhtml>
+
 </config>

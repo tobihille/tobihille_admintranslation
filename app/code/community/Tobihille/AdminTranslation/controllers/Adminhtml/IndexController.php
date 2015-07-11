@@ -147,7 +147,7 @@ class Tobihille_AdminTranslation_Adminhtml_IndexController extends Mage_Adminhtm
       catch (Exception $e)
       {
         $this->_getSession()->addError(
-          Mage::helper('tobihille_admintranslation')->___('Unable to save the tranlation.')
+          Mage::helper('tobihille_admintranslation')->___('Unable to save the translation.')
         );
         $redirectBack = true;
         Mage::logException($e);
